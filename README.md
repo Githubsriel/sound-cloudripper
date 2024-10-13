@@ -39,7 +39,7 @@ The script will use these proxies when making requests to SoundCloud.
 
 ---
 ### Running the Application
-The application now provides a graphical user interface (GUI) for entering inputs and starting/stopping the script. After running the script, you can:
+The application provides a graphical user interface (GUI) for entering inputs and starting/stopping the script. After running the script, you can:
 - Enter the artist URL, client ID(s), number of threads, and proxy file.
 - Optionally, test a specific private track URL to verify if it belongs to the selected artist.
 - Click the "Start" button to begin the bruteforce process.
@@ -47,30 +47,13 @@ The application now provides a graphical user interface (GUI) for entering input
 
 The UI remains responsive, allowing you to interact with it without freezing.
 
+The application should be started using the provided `start.bat` file, which sets up the environment and launches the script.
+
 ### Outputs
 The script can export the positive results in XML or JSON format.
-- **XML Export (-x)**: Exports the results to `output.xml` and updates it if it already exists.
-- **JSON Export (-j)**: Exports the results to `output.json` and updates it if it already exists.
+- **XML Export**: Exports the results to `output.xml` and updates it if it already exists.
+- **JSON Export**: Exports the results to `output.json` and updates it if it already exists.
 
----
-### Usage
-Run the script to open the GUI and configure the settings as needed. You can also use the following CLI arguments if needed (not mandatory with the GUI).
-
-#### CLI Arguments
-- `-h`  |  print out the possible commands
-- `-r`  |  base number of requests
-- `-t`  |  number of simultaneous threads **(multiplies the number of requests)**
-- `-x`  |  exports the positive results in an XML file (output.xml), *and updates it if it already exists.*
-- `-j`  |  exports the positive results in a JSON file (output.json), *and updates it if it already exists.*
-- `-v`  |  prompts positive results in real-time
-- `-vv` |  prompts positive and negative results in real-time
-- `-c`  | specify the SoundCloud client ID to ignore public/deleted tracks
-
-#### Example usage with arguments
-```
-python3 ripper.py -r 5 -t 5 -x
-(run cloudripper for 25 (5*5) requests, and export positive results in XML)
-```
 ---
 ### Why Python?
 Why not? (I have regrets)
