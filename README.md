@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-v3.11-yellow)]()
 
-a tool which basically finds private SoundCloud tracks by bruteforcing shareable links of on.soundcloud.com
+a (currently outdatedand not functional) tool which basically finds private SoundCloud tracks by bruteforcing shareable links of on.soundcloud.com
 ```
 Shareable SoundCloud links are shortened links, which look like this:
 => on.soundcloud.com/XXXXX => code 302: redirect => soundcloud.com/artist/track
